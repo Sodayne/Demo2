@@ -1,3 +1,6 @@
-##Prova per lab didattici
+# Prova per lab didattici
 
-qeuesta è una prova!
+questa è una prova!
+
+
+#Prova per cambiamenti da local
