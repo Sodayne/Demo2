@@ -6,7 +6,7 @@
 	"settings": {
 	  "workbench.startupEditor": "none", // Disabilita la pagina di benvenuto
 	  "terminal.integrated.defaultProfile.linux": "/bin/bash" // Usa bash come terminale predefinito
-	},
-	"postCreateCommand": "bash /usr/local/bin/startup.sh"
+	}
+	//"postCreateCommand": "bash /usr/local/bin/startup.sh"
   }
   
