@@ -2,5 +2,5 @@
     "name": "Ubuntu",
     "image": "mcr.microsoft.com/devcontainers/base:jammy",
     "remoteUser": "root",
-    "postCreateCommand": "bash ./startup.sh && echo 'if [ -x \"$(command -v figlet)\" ]; then figlet -f slant \"Welcome to Advanced Molecular Biology Labs\"; fi' >> ~/.bashrc && echo 'exec bash' >> ~/.bashrc"
+    "postCreateCommand": "bash -c 'echo \"if [ -x \\\"\\$(command -v figlet)\\\" ]; then figlet -f slant \\\"Welcome to Advanced Molecular Biology Labs\\\"; fi\" >> /etc/skel/.bashrc'"
 }
