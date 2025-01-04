@@ -6,6 +6,12 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get install -y \
     samtools 
 
+# Install VS Code
+RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+RUN mv microsoft.gpg /etc/apt/trusted.gpg.d/
+RUN apt-get update
+RUN apt-get install -y code figlet
+
 
 
 # Copia uno script personalizzato di avvio nel container
