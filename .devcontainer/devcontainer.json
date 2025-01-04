@@ -4,7 +4,7 @@
 	"containerEnv": {
 	  "TERM": "xterm-256color"
 	},
-	"postCreateCommand": "figlet -f slant 'Advanced Molecular Biology Labs' && /bin/bash",
+	"postCreateCommand": "/bin/bash -c 'figlet -f slant \"Advanced Molecular Biology Labs\" && /bin/bash'",
 	"features": {},
 	"settings": {
 	  "terminal.integrated.profiles.linux": {
