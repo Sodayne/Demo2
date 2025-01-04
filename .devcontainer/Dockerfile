@@ -4,8 +4,8 @@ FROM ubuntu:20.04
 
 # Installa dipendenze necessarie
 RUN apt-get update && apt-get install -y \
-    samtools 
-
+    wget gpg code figlet
+    
 # Install VS Code
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 RUN mv microsoft.gpg /etc/apt/trusted.gpg.d/
