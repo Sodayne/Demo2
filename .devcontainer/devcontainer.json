@@ -8,6 +8,5 @@
 	  "terminal.integrated.defaultProfile.linux": "/bin/bash" // Usa bash come terminale predefinito
 	},
 	"postCreateCommand": "bash /usr/local/bin/startup.sh"
-
   }
   

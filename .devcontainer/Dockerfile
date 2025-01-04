@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 
 # Installa dipendenze necessarie
 RUN apt-get update && apt-get install -y \
-    wget gpg figlet
+    wget gpg figlet samtools
 
 
 # Copia uno script personalizzato di avvio nel container
