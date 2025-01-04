@@ -1,12 +1,13 @@
 {
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "name": "Ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    
+    "customizations": {
+        "apt": {
+            "packages": []
+        }
+    },
 
-	"customizations": {
-		"apt": {
-			"packages": []  // Non serve installare pacchetti in questo blocco
-		}
-	},
-
-	"postCreateCommand": "bash startup.sh"
+    "remoteUser": "root",
+    "postCreateCommand": "bash startup.sh"
 }
