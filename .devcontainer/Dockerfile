@@ -6,4 +6,4 @@ RUN apt-get update && \
     apt-get clean
 
 # Comando di avvio: mostra l'ASCII art e avvia il terminale bash direttamente
-CMD echo -e "\n\n$(figlet -f slant 'Advanced Molecular Biology Labs')\n\n" && bash
+CMD figlet -f slant 'Advanced Molecular Biology Labs' && bash
