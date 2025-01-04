@@ -2,6 +2,5 @@
     "name": "Ubuntu",
     "image": "mcr.microsoft.com/devcontainers/base:jammy",
     "remoteUser": "root",
-    "postCreateCommand": "./startup.sh",
-    "initializeCommand": "bash"
+    "postCreateCommand": "bash /workspaces/your-repo/startup.sh && echo 'if [ -x \"$(command -v figlet)\" ]; then figlet -f slant \"Welcome to Advanced Molecular Biology Labs\"; fi' >> ~/.bashrc && echo 'exec bash' >> ~/.bashrc"
 }
