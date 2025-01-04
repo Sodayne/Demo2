@@ -7,7 +7,7 @@
 	  "workbench.startupEditor": "none", // Disabilita la pagina di benvenuto
 	  "terminal.integrated.defaultProfile.linux": "/bin/bash" // Usa bash come terminale predefinito
 	},
-	"postCreateCommand": "bash /usr/local/bin/startup.sh && code --install-extension vscode.keyboard-shortcut-extension",
-	"extensions": ["vscode.keyboard-shortcut-extension"] // Installa l'estensione delle scorciatoie di tastiera
+	"postCreateCommand": "bash /usr/local/bin/startup.sh"
+
   }
   
