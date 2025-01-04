@@ -2,9 +2,8 @@ FROM ubuntu:20.04
 
 # Aggiorniamo i pacchetti e installiamo figlet e samtools
 RUN apt-get update && \
-    apt-get install -y figlet samtools && \
-    apt-get clean
-
+    apt-get install -y \
+    figlet samtools 
 # Copiamo lo script di avvio
 COPY startup.sh /usr/local/bin/startup.sh
 

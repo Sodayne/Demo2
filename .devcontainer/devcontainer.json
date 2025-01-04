@@ -4,13 +4,6 @@
 	"containerEnv": {
 	  "TERM": "xterm-256color"
 	},
-	"features": {},
-	"settings": {
-	  "terminal.integrated.profiles.linux": {
-		"Bash": {
-		  "path": "/bin/bash"
-		}
-	  }
-	}
+	"features": {}
   }
   
