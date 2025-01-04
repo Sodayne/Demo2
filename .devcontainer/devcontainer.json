@@ -1,12 +1,16 @@
 {
-	"name": "Seba Environment",
-	"build": {
-	  "dockerfile": "Dockerfile"
+	"name": "ascii-art-container",
+	"image": "ubuntu:20.04",
+	"containerEnv": {
+	  "TERM": "xterm-256color"
 	},
+	"postCreateCommand": "echo -e \"\\n\\n$(figlet -f slant 'Advanced Molecular Biology Labs')\\n\\n\"",
+	"features": {},
 	"settings": {
-	  "workbench.startupEditor": "none", // Disabilita la pagina di benvenuto
-	  "terminal.integrated.defaultProfile.linux": "/bin/bash" // Usa bash come terminale predefinito
+	  "terminal.integrated.profiles.linux": {
+		"Bash": {
+		  "path": "/bin/bash"
+		}
+	  }
 	}
-	//"postCreateCommand": "bash /usr/local/bin/startup.sh"
   }
-  
