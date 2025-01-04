@@ -1,9 +1,12 @@
 {
-	"name": "ascii-art-container",
-	"image": "ubuntu:20.04",
-	"containerEnv": {
-	  "TERM": "xterm-256color"
-	},
-	"features": {}
-  }
-  
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+	"postCreateCommand": "figlet -f slant 'Advanced Molecular Biology Labs'",
+
+	"customizations": {
+		"apt": {
+			"packages": ["samtools", "figlet"]  // Installiamo samtools e figlet
+		}
+	}
+}
