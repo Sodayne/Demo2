@@ -2,11 +2,11 @@
 	"name": "Ubuntu",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 
-	"postCreateCommand": "figlet -f slant 'Advanced Molecular Biology Labs'",
-
 	"customizations": {
 		"apt": {
-			"packages": ["samtools", "figlet"]  // Installiamo samtools e figlet
+			"packages": []  // Non serve installare pacchetti in questo blocco
 		}
-	}
+	},
+
+	"postCreateCommand": "bash startup.sh"
 }
