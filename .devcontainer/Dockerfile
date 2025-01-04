@@ -5,5 +5,8 @@ RUN apt-get update && \
     apt-get install -y figlet samtools && \
     apt-get clean
 
-# Comando di avvio: mostra l'ASCII art e avvia il terminale bash direttamente
-CMD echo -e "\n\n$(figlet -f slant 'Advanced Molecular Biology Labs')\n\n" && bash
+# Copiamo lo script di avvio
+COPY startup.sh /usr/local/bin/startup.sh
+
+# Comando di avvio: eseguiamo lo script di avvio
+CMD ["/usr/local/bin/startup.sh"]
