@@ -1,13 +1,7 @@
 {
     "name": "Ubuntu",
     "image": "mcr.microsoft.com/devcontainers/base:jammy",
-    
-    "customizations": {
-        "apt": {
-            "packages": []
-        }
-    },
-
     "remoteUser": "root",
-    "postCreateCommand": "bash startup.sh"
+    "postCreateCommand": "./startup.sh",
+    "initializeCommand": "bash"
 }
