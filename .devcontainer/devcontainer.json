@@ -1,6 +1,11 @@
 {
-    "name": "Ubuntu",
-    "image": "mcr.microsoft.com/devcontainers/base:jammy",
-    "remoteUser": "root",
-    "postCreateCommand": "bash /workspaces/your-repo/startup.sh && echo 'if [ -x \"$(command -v figlet)\" ]; then figlet -f slant \"Welcome to Advanced Molecular Biology Labs\"; fi' >> ~/.bashrc && echo 'exec bash' >> ~/.bashrc"
+    "name": "Advanced Molecular Biology Labs",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "postCreateCommand": "bash ./startup.sh && echo 'if [ -x \"$(command -v figlet)\" ]; then figlet -f slant \"Welcome to Advanced Molecular Biology Labs\"; fi' >> ~/.bashrc && echo 'exec bash' >> ~/.bashrc",
+    "remoteUser": "root"
 }
